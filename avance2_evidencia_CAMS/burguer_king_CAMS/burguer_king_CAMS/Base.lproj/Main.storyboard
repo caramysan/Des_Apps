@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tij-kr-wT5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="burguer_king_CAMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="549456514_169047221_1706x1562" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-qH-jXe">
+                                <rect key="frame" x="63" y="258" width="288" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="HKy-Z1-F4p"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ar-Nc-MRj" customClass="BotonUno" customModule="burguer_king_CAMS" customModuleProvider="target">
+                                <rect key="frame" x="127" y="647" width="160" height="77"/>
+                                <color key="backgroundColor" red="0.90442806482315063" green="0.49882084131240845" blue="0.19538864493370056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="C18-uK-Aux"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Acceder">
+                                    <color key="titleColor" red="0.96601730585098267" green="0.91625851392745972" blue="0.83571678400039673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="X5L-r9-DPa" kind="show" id="VNF-IS-5B5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96601730585098267" green="0.91625851392745972" blue="0.83571678400039673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ar-Nc-MRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="2zT-aW-HmJ"/>
+                            <constraint firstItem="c0X-qH-jXe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5pw-hd-YUt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ar-Nc-MRj" secondAttribute="bottom" constant="138" id="IFz-nh-XjJ"/>
+                            <constraint firstItem="c0X-qH-jXe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="T8k-Dg-NkP"/>
+                            <constraint firstItem="c0X-qH-jXe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="Uh7-aM-qSt"/>
+                            <constraint firstItem="c0X-qH-jXe" firstAttribute="centerX" secondItem="0ar-Nc-MRj" secondAttribute="centerX" id="exY-zh-8ji"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sv5-5y-Mpx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="88.392857142857139"/>
+        </scene>
+        <!--Coupons-->
+        <scene sceneID="alg-v0-2hG">
+            <objects>
+                <viewController title="Coupons" id="Pjd-nB-rKf" customClass="CViewController" customModule="burguer_king_CAMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ck9-qE-O10">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEi-YW-aJJ">
+                                <rect key="frame" x="5" y="90" width="404" height="716"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="716" id="RZ1-kS-mrE"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ffM-qv-ZE0"/>
+                        <color key="backgroundColor" red="0.96601730585098267" green="0.91625851392745972" blue="0.83571678400039673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WEi-YW-aJJ" firstAttribute="centerX" secondItem="ck9-qE-O10" secondAttribute="centerX" id="QVm-kN-Y5l"/>
+                            <constraint firstItem="WEi-YW-aJJ" firstAttribute="centerY" secondItem="ck9-qE-O10" secondAttribute="centerY" id="UQb-er-ck4"/>
+                            <constraint firstItem="WEi-YW-aJJ" firstAttribute="leading" secondItem="ffM-qv-ZE0" secondAttribute="leading" constant="5" id="ek2-T6-eCq"/>
+                            <constraint firstItem="WEi-YW-aJJ" firstAttribute="top" secondItem="ffM-qv-ZE0" secondAttribute="top" constant="2" id="jCb-oy-hm7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="coupon2" id="xuQ-ye-81t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZP-aS-PDn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="905"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="3sF-6p-J86">
+            <objects>
+                <viewController title="Account" id="KLE-F1-iD5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G5A-Xu-9zK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mqc-wg-5hb"/>
+                        <color key="backgroundColor" red="0.96601730585098267" green="0.91625851392745972" blue="0.83571678400039673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="account" id="Ypm-OT-IOZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRY-Qw-lXw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3143" y="611"/>
+        </scene>
+        <!--Noticiaa-->
+        <scene sceneID="VCM-c8-3Fb">
+            <objects>
+                <viewController id="69L-yG-w1C" customClass="NVController" customModule="burguer_king_CAMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9yM-EP-EJi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4X-B4-SPw">
+                                <rect key="frame" x="5" y="93" width="404" height="715"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mzu-WG-Q7g"/>
+                        <color key="backgroundColor" red="0.96601730585098267" green="0.91625851392745972" blue="0.83571678400039673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mzu-WG-Q7g" firstAttribute="bottom" secondItem="C4X-B4-SPw" secondAttribute="bottom" constant="5" id="HBc-Wi-CMj"/>
+                            <constraint firstItem="C4X-B4-SPw" firstAttribute="leading" secondItem="Mzu-WG-Q7g" secondAttribute="leading" constant="5" id="YVw-Fa-SI5"/>
+                            <constraint firstItem="C4X-B4-SPw" firstAttribute="centerX" secondItem="9yM-EP-EJi" secondAttribute="centerX" id="hvX-P0-Rgb"/>
+                            <constraint firstItem="C4X-B4-SPw" firstAttribute="top" secondItem="Mzu-WG-Q7g" secondAttribute="top" constant="5" id="zbn-Hm-o81"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Noticiaa" image="news" id="ap8-0z-5RD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haF-Xy-gXq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.8840579710147" y="-835.04464285714278"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="69G-pi-ogg">
+            <objects>
+                <tabBarController id="X5L-r9-DPa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="upi-mD-vrX"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mka-4g-XQP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="69L-yG-w1C" kind="relationship" relationship="viewControllers" id="EUZ-Wg-Rtg"/>
+                        <segue destination="Pjd-nB-rKf" kind="relationship" relationship="viewControllers" id="cvf-2G-7Ow"/>
+                        <segue destination="TLA-or-lVg" kind="relationship" relationship="viewControllers" id="ba2-og-sF3"/>
+                        <segue destination="KLE-F1-iD5" kind="relationship" relationship="viewControllers" id="AwV-I2-ZMY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GfJ-OG-Gem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="88"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="oyQ-gQ-MYc">
+            <objects>
+                <viewController title="Map" id="TLA-or-lVg" customClass="MVController" customModule="burguer_king_CAMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XgW-pe-Huu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIw-ab-fyR">
+                                <rect key="frame" x="5" y="90" width="404" height="716"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="716" id="muf-5D-Tov"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c6g-23-aGO"/>
+                        <color key="backgroundColor" red="0.96601730585098267" green="0.91625851392745972" blue="0.83571678400039673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XIw-ab-fyR" firstAttribute="centerX" secondItem="XgW-pe-Huu" secondAttribute="centerX" id="VJG-RL-MM7"/>
+                            <constraint firstItem="XIw-ab-fyR" firstAttribute="top" secondItem="c6g-23-aGO" secondAttribute="top" constant="2" id="uxE-s3-977"/>
+                            <constraint firstItem="XIw-ab-fyR" firstAttribute="leading" secondItem="c6g-23-aGO" secondAttribute="leading" constant="5" id="yCz-Ne-s6P"/>
+                            <constraint firstItem="XIw-ab-fyR" firstAttribute="centerY" secondItem="XgW-pe-Huu" secondAttribute="centerY" id="z0a-1r-Naq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="map" id="IzE-9r-DU1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itZ-oE-jSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3142" y="-469"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jF7-kk-5H5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tij-kr-wT5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gTg-0F-FqS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c9W-B9-yXY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7mc-Ia-NP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="549456514_169047221_1706x1562" width="1706" height="1562"/>
+        <image name="account" width="50" height="50"/>
+        <image name="coupon2" width="50" height="50"/>
+        <image name="map" width="50" height="50"/>
+        <image name="news" width="50" height="50"/>
+    </resources>
+</document>
